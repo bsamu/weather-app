@@ -41,7 +41,7 @@ selector.addEventListener("change", () => {
 });
 
 const processData = async (location) => {
-        const weatherData = await fetch(`http://api.weatherapi.com/v1/current.json?key=b8c735e118414f95ba2103607210612&q=${location}&aqi=no`);
+        const weatherData = await fetch(`https://api.weatherapi.com/v1/current.json?key=b8c735e118414f95ba2103607210612&q=${location}&aqi=no`);
         const result = await weatherData.json();
         console.log(result);
         selector.addEventListener("change", () => {
