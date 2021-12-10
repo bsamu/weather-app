@@ -10,14 +10,15 @@
 
     <link rel="icon" type="image/png" href="./icon/favic.png" />
     <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
 </head>
 
 <body>
-    <div class="container">
+    <div class="container" id="very-specific-design">
         <h1>Team V - Weather app</h1>
         <div class="selectCity">
             <input list="locationSelector" id="locationInput" value="Select location:">
-            <button title="Use my location"><img src="./icon/map.png" alt="button" width="48px"></button>
+            <button title="Use my location"><img src="/icon/map.png" alt="button" width="48px"></button>
             <datalist id="locationSelector">
             </datalist>
         </div>
@@ -34,18 +35,7 @@
                 <div id="windKm"></div>
             </div>
         </div>
-
     </div>
-
-    <!-- <select style="width: 200px; float: left;" onchange="this.nextElementSibling.value=this.value">
-        <option></option>
-        <option>1</option>
-        <option>2</option>
-        <option>3</option>
-    </select>
-    <input style="width: 185px; margin-left: -199px; margin-top: 1px; border: none;" /> -->
-
-    <script src="main.js"></script>
 </body>
 
 </html>
